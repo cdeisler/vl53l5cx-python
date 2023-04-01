@@ -93,7 +93,7 @@ class VL53L5CX_ResultsData(Structure):
 
 
 class VL53L5CX:
-    def __init__(self, i2c_addr=DEFAULT_I2C_ADDRESS, i2c_dev=None, skip_init=False):
+    def __init__(self, i2c_addr=DEFAULT_I2C_ADDRESS, i2c_dev=None, skip_init=True):
         """Initialise VL53L5CX.
 
         :param i2c_addr: Sensor i2c address. (defualt: 0x29)
